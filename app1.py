@@ -40,7 +40,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-New_Logistic_dataset = pd.read_csv('New_Logistic_dataset_scaled.csv')
+New_Logistic_dataset = pd.read_excel('New_Logistic_dataset_scaled.xlsx')
 Stacked_Model = joblib.load('Logistic_Data_StackingRegressor.pkl')
 
 st.title('Time Duration Predictor')
