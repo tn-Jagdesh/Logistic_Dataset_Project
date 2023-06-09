@@ -48,9 +48,9 @@ st.title('Time Duration Predictor')
 # Autoplant logo in top-left corner
 st.markdown('<div class="autoplant-logo">autoplant</div>', unsafe_allow_html=True)
 
-SOURCE = st.selectbox('Source', New_Logistic_dataset['SOURCE '].unique())
+SOURCE = st.selectbox('Source', New_Logistic_dataset['SOURCE'].unique())
 
-filtered_df = New_Logistic_dataset[New_Logistic_dataset['SOURCE '] == SOURCE]
+filtered_df = New_Logistic_dataset[New_Logistic_dataset['SOURCE'] == SOURCE]
 
 DESTINATION = st.selectbox('Destination', filtered_df['DESTINATION'])
 
