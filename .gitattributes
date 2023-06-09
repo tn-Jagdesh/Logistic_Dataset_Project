@@ -1,2 +1,0 @@
-New_Logistic_dataset_scaled.csv filter=lfs diff=lfs merge=lfs -text
-Logistic_Data_StackingRegressor.pkl filter=lfs diff=lfs merge=lfs -text
