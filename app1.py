@@ -52,7 +52,7 @@ SOURCE = st.selectbox('Source', New_Logistic_dataset.SOURCE.unique())
 
 filtered_df = New_Logistic_dataset[New_Logistic_dataset.SOURCE == SOURCE]
 
-DESTINATION = st.selectbox('Destination', filtered_df['DESTINATION'])
+DESTINATION = st.selectbox('Destination', filtered_df['DESTINATION'].unique())
 
 if st.button('Predict Time Duration'):
     def convert_duration(duration_seconds):
